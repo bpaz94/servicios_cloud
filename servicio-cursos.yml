@@ -1,0 +1,22 @@
+  spring:
+    datasource:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3307/cursosFormacion
+      username: root
+      password: root
+    jpa:
+      hibernate:
+        naming:
+          implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+          physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+          
+    server:
+      port: 8000
+      
+      eureka:
+        instance:
+          instance-id: instancia_A
+        client:
+          service-url:
+            defaultZone: http://localhost:8761/eureka
+      
