@@ -1,7 +1,7 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://172.17.48.1:3307/tiendaformacion?serverTimezone=UTC
+    url: jdbc:mysql://192.168.8.165:3307/tiendaformacion?serverTimezone=UTC
     username: root
     password: root   
   jpa:
@@ -13,7 +13,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://172.17.48.1:8761/eureka
+      defaultZone: http://192.168.8.165:8761/eureka
   instance: 
     hostname: 172.17.48.1
 server:
