@@ -15,6 +15,6 @@ eureka:
     serviceUrl:
       defaultZone: http://192.168.8.165:8761/eureka
   instance: 
-    hostname: 172.17.48.1
+    hostname: 192.168.8.165
 server:
   port: 8000 
